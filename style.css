@@ -1,0 +1,167 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  font-family: poppins;
+  font-family: "Poppins", sans-serif;
+}
+header,
+body > section,
+footer {
+  padding: 25px 10%;
+}
+header h1 {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 43px;
+  margin: 25px 0;
+}
+header p {
+  font-size: 22px !important;
+}
+.heroContent span,
+.heroContent span a {
+  color: #292f6b;
+}
+/* .heroImage {
+  border: 1px solid red;
+} */
+.heroImage img {
+  width: 100%;
+  height: auto;
+  border-radius: 36% 50% 50% 36%;
+}
+.callToAction {
+  margin-top: 40px;
+  display: flex;
+}
+.newsBtn,
+.supportBtn {
+  border-radius: 1px;
+  padding: 10px 20px;
+  font-size: 17px;
+}
+.newsBtn {
+  background-color: #292f6b;
+  color: white;
+}
+.newsBtn:hover {
+  color: white;
+}
+.supportBtn {
+  color: #292f6b;
+  border: 1px solid #292f6b;
+  background-color: white;
+  margin-left: 2rem;
+}
+.supportBtn:hover {
+  color: #292f6b;
+}
+
+header .row {
+  align-items: center;
+}
+aside {
+  border: 1px solid #292f6b;
+  padding: 20px 8%;
+  width: 100%;
+  margin-bottom: 40px;
+}
+aside small {
+  font-weight: 500;
+}
+aside small a,
+aside small a:hover {
+  color: #292f6b;
+}
+aside > small i {
+  color: rgb(59, 0, 0);
+}
+.container-fluid {
+  padding: 0;
+}
+main h2 {
+  font-size: 27px;
+}
+.dateWrap {
+  margin: 25px 0;
+  display: block;
+}
+.date {
+  color: #292f6b;
+}
+main {
+  margin: 20px 0 70px 0;
+}
+.jobinfo {
+  background-color: #292f6b;
+}
+.jobinfo,
+.jobinfo2 {
+  display: flex;
+  margin-top: 15px;
+  align-items: center;
+  padding: 15px 5px;
+}
+.jobinfo2 {
+  background-color: white;
+  color: #292f6b;
+  border: 1px solid #292f6b;
+}
+
+.jobinfo p,
+.jobinfo2 p {
+  flex-basis: 20%;
+  flex-grow: 1;
+  flex-shrink: 1;
+  text-align: center;
+  color: white;
+  margin-bottom: 0;
+}
+.jobinfo2 p {
+  color: #292f6b;
+}
+footer {
+  padding: 50px 30px;
+  background-color: #292f6b;
+  color: white;
+}
+
+.contactForm form input[type="text"] {
+  width: 30%;
+}
+.contactForm form input[type="email"] {
+  width: 40%;
+}
+.contactForm form input,
+.contactForm form input::placeholder {
+  color: #292f6b;
+  padding: 5px;
+  box-sizing: border-box;
+}
+.contactForm form input:focus {
+  outline: 0;
+}
+.contactForm form button {
+  background-color: #292f6b;
+  border: 0;
+  padding: 5px 15px;
+  border: 1px solid white;
+  box-sizing: border-box;
+  color: white;
+}
+
+@media (max-width: 948px) {
+  .supportBtn {
+    margin-left: 0.5rem;
+  }
+  .newsBtn,
+  .supportBtn {
+    padding: 10px 12px;
+  }
+}
+@media (max-width: 767px) {
+  .heroImage {
+    display: none;
+  }
+}
