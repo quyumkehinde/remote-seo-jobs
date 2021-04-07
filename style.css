@@ -1,31 +1,37 @@
+html,
+body {
+  height: 100%;
+}
 body {
   margin: 0;
   padding: 0;
   background-color: white;
-  font-family: poppins;
-  font-family: "Poppins", sans-serif;
+  font-family: "futura-pt", Arial;
+  position: relative;
 }
 header,
 body > section,
-footer {
+footer,
+.bfcontent {
   padding: 25px 10%;
 }
+a,
+a:hover {
+  color: #292f6b;
+}
 header h1 {
-  font-family: "Rubik", sans-serif;
   font-weight: 400;
-  font-size: 43px;
+  font-size: 40px;
   margin: 25px 0;
 }
 header p {
-  font-size: 22px !important;
+  font-size: 16px !important;
 }
 .heroContent span,
 .heroContent span a {
   color: #292f6b;
 }
-/* .heroImage {
-  border: 1px solid red;
-} */
+
 .heroImage img {
   width: 100%;
   height: auto;
@@ -39,14 +45,21 @@ header p {
 .supportBtn {
   border-radius: 1px;
   padding: 10px 20px;
-  font-size: 17px;
+  font-size: 15px;
 }
 .newsBtn {
   background-color: #292f6b;
   color: white;
 }
+.newsBtn,
+.newsBtn:active,
+.newsBtn:focus {
+  border: 0;
+  outline: 0;
+}
 .newsBtn:hover {
   color: white;
+  text-decoration: underline;
 }
 .supportBtn {
   color: #292f6b;
@@ -61,6 +74,7 @@ header p {
 header .row {
   align-items: center;
 }
+
 aside {
   border: 1px solid #292f6b;
   padding: 20px 8%;
@@ -69,6 +83,7 @@ aside {
 }
 aside small {
   font-weight: 500;
+  font-size: 14px;
 }
 aside small a,
 aside small a:hover {
@@ -91,40 +106,58 @@ main h2 {
   color: #292f6b;
 }
 main {
-  margin: 20px 0 70px 0;
+  margin: 20px 0 0px 0;
 }
+
 .jobinfo {
-  background-color: #292f6b;
-}
-.jobinfo,
-.jobinfo2 {
+  background-color: #fff;
+  border: 1px solid #292f6b;
   display: flex;
   margin-top: 15px;
   align-items: center;
   padding: 15px 5px;
 }
-.jobinfo2 {
-  background-color: white;
-  color: #292f6b;
-  border: 1px solid #292f6b;
+.jobinfo p {
+  flex-basis: 25%;
+  padding: 5px;
+  box-sizing: border-box;
+  text-align: left;
+  color: black;
+  margin-bottom: 0;
+  font-size: 15px;
+}
+.jobinfo p:nth-child(1) {
+  white-space: pre-wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 5px 2px;
 }
 
-.jobinfo p,
-.jobinfo2 p {
-  flex-basis: 20%;
-  flex-grow: 1;
-  flex-shrink: 1;
-  text-align: center;
-  color: white;
-  margin-bottom: 0;
-}
-.jobinfo2 p {
+.jobinfo a {
   color: #292f6b;
 }
+.jobinfo:nth-child(1) p {
+  font-weight: bold;
+  color: #292f6b;
+}
+
+.bfcontent {
+  margin: 0 auto;
+  font-size: 16px;
+  padding-bottom: 200px;
+}
+.bfcontent h4 {
+  color: #292f6b;
+}
+
 footer {
-  padding: 50px 30px;
+  padding: 30px;
   background-color: #292f6b;
-  color: white;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100%;
 }
 
 .contactForm form input[type="text"] {
@@ -146,11 +179,66 @@ footer {
   background-color: #292f6b;
   border: 0;
   padding: 5px 15px;
-  border: 1px solid white;
+  border: 1px solid #fff;
   box-sizing: border-box;
-  color: white;
+  color: #fff;
 }
-
+.subArea {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  z-index: -10;
+  transition: 0.2s opacity ease-in-out;
+}
+.subForm {
+  border: 1px solid #292f6b;
+  background-color: white;
+  padding: 5%;
+  box-sizing: border-box;
+  margin: 0 20px;
+}
+.subscribe {
+  background-color: #292f6b;
+  padding: 5px 10px;
+  border: 1px solid white;
+  color: white;
+  border-radius: 2px;
+  display: block;
+  margin-top: 5px;
+  width: 100%;
+  transition: all 0.2s ease-in-out;
+}
+.subscribe:hover {
+  background-color: white;
+  border: 1px solid #292f6b;
+  color: #292f6b;
+}
+.subForm input {
+  padding: 5px;
+  width: 100%;
+  display: block;
+  margin-top: 5px;
+}
+.subArea .row {
+  align-items: center !important;
+}
+.subForm > button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: red;
+  background-color: white;
+  border: 0;
+  border: 1px solid red;
+}
+.subForm > button:focus {
+  outline: 0;
+}
 @media (max-width: 948px) {
   .supportBtn {
     margin-left: 0.5rem;
@@ -163,5 +251,35 @@ footer {
 @media (max-width: 767px) {
   .heroImage {
     display: none;
+  }
+}
+@media (max-width: 490px) {
+  header h1 {
+    font-size: 35px;
+  }
+  header p {
+    font-size: 18px;
+  }
+}
+@media (max-width: 415px) {
+  .contactForm form input[type="email"] {
+    width: 55%;
+    display: inline-block;
+  }
+  .contactForm form input[type="text"] {
+    width: 35%;
+    display: inline-block;
+  }
+  .contactForm form button {
+    display: block;
+    margin-top: 5px;
+  }
+  header,
+  body > section,
+  footer {
+    padding: 25px 5%;
+  }
+  footer {
+    position: initial;
   }
 }

@@ -15,12 +15,12 @@
     <header>
         <div class="row">
             <div class="heroContent col-lg-7 col-xl-7 col-md-7 col-sm-12">
-                <span><a href="">Follow @remoteSEOJobs on Twitter</a></span>
+                <span><a href="https://twitter.com/theayooladaniel">Follow @theayooladaniel on Twitter</a></span>
                 <h1>Remote SEO Jobs</h1>
-                <p>The easiest way to find very good SEO talents for your agency or startup company.</p>
+                <p>Welcome to our SEO remote jobs!<br> Find your Full or Part-Time remote SEO job on this board and start working as an SEO from home.</p>
                 <div class="callToAction">
-                    <a class="newsBtn" href="">Join Our Newsletter</a>
-                    <a class="supportBtn" href="">Support Website</a>
+                    <button class="newsBtn" id="subButton" >Join Our Newsletter</button>
+                    <a class="supportBtn"  href="">Support Website</a>
                 </div>
             </div>
             
@@ -35,41 +35,32 @@
         </aside>
         <main>
             <h2>Latest Remote SEO Jobs</h2>
-            <span class="dateWrap">Last Updated: <span class="date">Tuesday, March 31, 2021</span></span>
+            <span class="dateWrap">Last Updated: <span class="date"></span></span>
             <div class="jobs">
                 <div class="jobinfo">
                     <p class="company">Company</p>
-                    <p class="location">Location</p>
-                    <p class="position">Position</p>
-                    <p class="details">Details</p>
+                    <p class="location">Location (Remote)</p>
+                    <p class="date">Date Posted</p>
+                    <p class="position">Position (Apply)</p>
                 </div>
-                <div class="jobinfo2">
-                    <p class="company">Company</p>
-                    <p class="location">Location</p>
-                    <p class="position">Position</p>
-                    <p class="details">Details</p>
-                </div>
-                <div class="jobinfo">
-                    <p class="company">Company</p>
-                    <p class="location">Location</p>
-                    <p class="position">Position</p>
-                    <p class="details">Details</p>
-                </div>
-                <div class="jobinfo2">
-                    <p class="company">Company</p>
-                    <p class="location">Location</p>
-                    <p class="position">Position</p>
-                    <p class="details">Details</p>
-                </div>
-                <div class="jobinfo">
-                    <p class="company">Company</p>
-                    <p class="location">Location</p>
-                    <p class="position">Position</p>
-                    <p class="details">Details</p>
-                </div>
+                
+                <!-- Content will be dynamically added using javascript -->
             </div>
         </main>
     </section>
+    
+    
+    <div class="bfcontent">
+        <h4 class="h4">RemoteSEOjobs can help!</h4><br />
+        <p>
+        You will be able to post a job for $50 when we've reached 5000 monthly pageviews. Our earnings and pageviews will be open-sourced.
+        </p>
+        <p>
+            Interested in helpful SEO resources? <a href="#">Join our community</a>!
+        </p>
+    </div>
+
+    
     <footer>
         <div class="contactForm row">
             <div class="col-xl-5 col-md-5 col-sm-12">
@@ -84,5 +75,29 @@
             </div>
         </div>
     </footer>
+    <script src="app.js">
+        
+    </script>
+    <section style="opacity: 0;" class="row subArea">
+        <div class="col-xl-3 col-lg-3 col-sm-2 col-xs-1">
+
+        </div>
+        <div class="col-xl-6 col-lg-6 col-sm-8 col-xs-10 subForm">
+            <h2>SEO Job Alert!</h2>
+            <p>Get the latest SEO jobs delivered to your inbox weekly.</p>
+            <form>
+                <input type="text" placeholder="Name" required />
+                <input type="email" placeholder="Enter your email" required />
+                <button type="submit" class="subscribe">Subscribe</button>
+            </form>
+            <button id="closebtn">X</button>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-xs-1 col-sm-2">
+
+        </div>
+    </section>
+    <script src="subscribe.js">
+
+    </script>
 </body>
 </html>
