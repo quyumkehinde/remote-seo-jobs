@@ -1,9 +1,13 @@
 # Remote-SEO-Jobs
 
-## Website URL
+## Description?
 
-https://remoteseojobs.co
+An online marketing job board to find SEO and marketing related roles.
 
-## What is it all about?
+## Live Website
 
-RemoteSEOJobs is a job board website where SEOs can find various middle and high level remote SEO jobs, and jumpstart or skyrocket their SEO career.
+[https://quyumkehinde.github.io/remote-seo-jobs](https://quyumkehinde.github.io/remote-seo-jobs/)
+
+## Contact
+
+Find this project useful? Give me a shoutout on [Twitter](https://twitter.com/quyum_kehinde) ;)
