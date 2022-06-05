@@ -1,6 +1,4 @@
-# Remote-SEO-Jobs
-
-## Description?
+## Description
 
 An online marketing job board to find SEO and marketing related roles.
 
@@ -8,6 +6,6 @@ An online marketing job board to find SEO and marketing related roles.
 
 [https://quyumkehinde.github.io/remote-seo-jobs](https://quyumkehinde.github.io/remote-seo-jobs/)
 
-### Contact
+### Support
 
-Find this project useful? Give me a shoutout on [Twitter](https://twitter.com/quyum_kehinde) ;)
+Find this project useful? Please give me a shoutout on [Twitter](https://twitter.com/quyum_kehinde)
